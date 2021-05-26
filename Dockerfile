@@ -1,5 +1,8 @@
-FROM ubuntu:trusty
+FROM ubuntu:latest
 MAINTAINER Wyatt Pan <wppurking@gmail.com>
+
+ARG DEBIAN_FRONTEND=noninteractive
+ENV TZ=Asia/Shanghai
 
 ADD ./certs /opt/certs
 ADD ./bin /usr/local/bin
