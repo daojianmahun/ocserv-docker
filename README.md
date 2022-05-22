@@ -6,9 +6,9 @@
 
 
 ## 简单部署
-在 [安装好 Docker 1.0+](https://gist.github.com/wppurking/55db8651a88425e0f977) 并且正常启动 Docker 后:
+在 [安装好 Docker 1.0+](https://gist.github.com/daojianmahun/55db8651a88425e0f977) 并且正常启动 Docker 后:
 
-* `cd ~;git clone https://github.com/wppurking/ocserv-docker.git` : 将当前 repo 下载, 拥有可调整的 ocserv.conf 配置文件以及 ocpasswd 用户密码文件
+* `cd ~;git clone https://github.com/daojianmahun/ocserv-docker.git` : 将当前 repo 下载, 拥有可调整的 ocserv.conf 配置文件以及 ocpasswd 用户密码文件
 * `docker run -d --privileged --name ocserv-docker -v ~/ocserv-docker/ocserv:/etc/ocserv -p 443:443/tcp wppurking/ocserv`  :  Box 自动下载. ocserv 的一些功能需要 Docker 在 privileged 权限下处理
 * `docker logs ocserv-docker` : 查看运行日志, 检查是否正常运行(可重复执行).
 
