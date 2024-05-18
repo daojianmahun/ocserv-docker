@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:22.04
 MAINTAINER Wyatt Pan <wppurking@gmail.com>
 
 ARG DEBIAN_FRONTEND=noninteractive
